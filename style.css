@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
     
 }
 
@@ -33,7 +34,7 @@ body {
     display: flex;
      justify-content: space-between;
     padding: 20px;
-    width: 100%;
+    /* width: 100%; */
 
     padding-top: calc(34px + (37 - 34) * ((110vw - 375px) / (1280 - 375)));
     padding-left: calc(16px + (80 - 16) * ((110vw - 375px) / (1280 - 375)));
@@ -136,9 +137,11 @@ span.community {
         
     .mobile-menu {
        
-       position: relative;
+      display: flex ;
+      flex-direction: column;
+       justify-content: center;
+       align-items: center;
        
-      
        top: 0;
        width: 100%;
        height: 100%;
@@ -372,7 +375,7 @@ left: 722px;
           justify-content: center;
           width: 155px;
           height: 54px;
-         
+         margin-left: -20px;
           font-size: 18px;
           font-weight: 600;
           line-height: 21.11px;
@@ -385,7 +388,8 @@ left: 722px;
           justify-content: center;
           width: 155px;
           height: 54px;
-          margin-right: 16px;
+          /* margin-right: 16px; */
+          margin-left: -5px;
           font-size: 18px;
           font-weight: 600;
           line-height: 21.11px;
@@ -472,12 +476,12 @@ left: 722px;
        
         
       .slider {
-          margin-top: 100px;
+          /* margin-top: 100px; */
           background-image: url(./img/Rectangle\ 3.png);
           background-repeat: no-repeat;
           
-          width: 100vw;
-          overflow-x: hidden;
+          /* width: 100vw; */
+          overflow: hidden;
           
       }
       
@@ -691,7 +695,8 @@ left: 722px;
 
       @media (max-width: 600px) {
          .slider {
-            padding: 0 16px;
+             padding: 0 16px; 
+            
          }
           
           #elipse{
@@ -720,7 +725,7 @@ left: 722px;
           .swiper-collections {
                display: inline-block;
                width: 100vw;
-               overflow-x: hidden;
+               overflow: hidden;
            }
               
           h5 {
@@ -926,6 +931,7 @@ left: 722px;
               display: flex;
               flex-direction: column;
               justify-content: center;
+              margin-right: 0;
           }
           #stroke {
               display: none;
@@ -1103,6 +1109,7 @@ left: 722px;
             }
 
             @media(max-width: 600px) {
+                
                 .collection h2 {
                 font-size: 36px;
                 font-weight: 700;
@@ -1924,6 +1931,9 @@ input::placeholder {
         background-color: #251928;
         background-size: cover;
         margin-top: -100px;
+        width: 375px;
+        margin-left: 0;
+        
     } 
        
     .footer p {
